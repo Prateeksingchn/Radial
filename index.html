@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    'gilroy': ['Gilroy', 'sans-serif'],
+                },
+                extend: {
+                    colors: {
+                        primary: '#3659DB',
+                        secondary: '#4C94FF',
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        @font-face {
+            font-family: 'Gilroy';
+            src: url('./fonts/Gilroy-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Gilroy';
+            src: url('./fonts/Gilroy-Medium.ttf') format('truetype');
+            font-weight: 600;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Gilroy';
+            src: url('./fonts/Gilroy-Black.ttf') format('truetype');
+            font-weight: 800;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Gilroy';
+            src: url('./fonts/Gilroy-ExtraBold.ttf') format('truetype');
+            font-weight: 900;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body class="font-gilroy">
+    <div id="main" class="w-full relative">
+        <div id="nav" class="flex items-center justify-center py-5 px-8">
+            <h2 class="font-black lg:text-4xl text-5xl">Radial</h2>
+        </div>
+        <div id="hero" class="h-[50vh] w-full relative text-center lg:mt-12">
+            <h1 class="font-bold lg:leading-tight leading-none text-7xl sm:text-8xl md:text-9xl ">Listen to <br> what's new.</h1>
+            <p class="mt-5 font-semibold text-lg">Catch up and record what's happening with short sound clips.</p>
+            <div id="centeredelems" class="lg:flex lg:flex-row flex flex-col items-center justify-center gap-5 mt-8">
+                <input type="text" placeholder="Your Email" class="w-2/3 sm:w-1/2 md:w-1/3 px-6 py-5 rounded-full bg-gray-200 text-lg font-semibold outline-none">
+                <button class="px-8 py-3 rounded-full bg-gradient-to-br from-primary to-blue-500 text-white font-extrabold">Get Early access</button>
+            </div>
+        </div>
+        <div id="mobile" class=" w-full lg:mt-20 mt-48">
+            <img src="https://framerusercontent.com/images/CXfCre91VJWBFSbYgFNDAEnlI.webp" alt="" class="w-full object-cover">
+        </div>
+        <div id="dets" class="text-center mt-20">
+            <h1 class="font-bold text-5xl sm:text-6xl md:text-7xl text-black leading-tight">Up to 5 minutes long.</h1>
+            <h1 class="font-bold text-5xl sm:text-6xl md:text-7xl text-black leading-tight mt-4">Disappear after 48 hours.</h1>
+            <h1 class="font-bold text-5xl sm:text-6xl md:text-7xl text-black leading-tight mt-4 text-secondary">Always fresh.</h1>
+        </div>
+        <div id="section" class="flex flex-col md:flex-row items-center justify-center py-10 px-5 lg:mb-20">
+            <div id="sectionleft" class="md:w-1/2 lg:w-1/2 w-full lg:px-20">
+                <img src="https://framerusercontent.com/images/rRQiXCpvZo5WbgNliesBm5qZuYE.webp" alt="" class="w-full">
+            </div>
+            <div id="sectionright" class="md:w-1/2 py-24 px-8 md:px-24">
+                <h1 class="font-bold text-5xl sm:text-6xl md:text-7xl leading-tight">Play your<br>favourite<br>voices.</h1>
+                <p class="font-bold text-3xl sm:text-xl md:text-2xl mt-5">Follow people and listen to <br> their latest clips seamlessly.</p>
+            </div>
+        </div>
+        <div id="section" class="flex flex-col md:flex-row-reverse items-center justify-center py-10 px-5 lg:mb-20">
+            <div id="sectionleft" class="md:w-1/2 px-20">
+                <img src="https://framerusercontent.com/images/q03m2rY3Xl7OGFZYH35Olnrwik.webp" alt="" class="w-full lg:scale-100 scale-150">
+            </div>
+            <div id="sectionright" class="md:w-1/2 py-24 px-8 md:px-24">
+                <h1 class="font-bold text-5xl sm:text-6xl md:text-7xl lg:leading-tight">Listen to <br> what's hot</h1>
+                <p class="font-bold text-3xl sm:text-xl md:text-2xl mt-5">Discover what's trending and <br> find new people to follow.</p>
+            </div>
+        </div>
+        <div id="section" class="flex flex-col md:flex-row items-center justify-center py-10 px-5 lg:mb-20">
+            <div id="sectionleft" class="lg:w-1/2 w-full px-20">
+                <img src="https://framerusercontent.com/images/dXIqnNy4HmO7pMlf5vBAhknWX84.webp" alt="" class="w-full lg:scale-100 scale-150">
+            </div>
+            <div id="sectionright" class="md:w-1/2 py-24 px-8 md:px-24">
+                <h1 class="font-bold text-5xl sm:text-6xl md:text-7xl leading-tight">Drop it</h1>
+                <p class="font-bold text-3xl lg:block hidden sm:text-xl md:text-2xl mt-5">Record your clip in the app or <br> upload a pre-recorded one <br> and share it with the world.</p>
+                <p class="font-bold text-3xl sm:text-xl lg:hidden block md:text-2xl mt-5">Record your clip in the app or upload a pre-recorded one and share it with the world.</p>
+            </div>
+        </div>
+        <div id="footer" class="w-full h-[70vh] bg-[#000000] py-20 px-8 text-center text-white">
+            <h1 class="font-black text-[80px] sm:text-6xl md:text-7xl">Radial</h1>
+            <div id="inputdiv" class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-5">
+                <input type="text" placeholder="Your Email" class="px-16 py-5 rounded-full bg-[#333333] text-lg font-bold text-white outline-none placeholder-opacity-40">
+                <button class="px-10 py-5 rounded-full bg-white font-semibold text-lg text-black">Get New Offers</button>
+            </div>
+            <div id="links" class="flex justify-center items-center gap-10 mt-12">
+                <a href="#" class="font-semibold text-xl">Twitter</a>
+                <a href="#" class="font-semibold text-xl">LinkedIn</a>
+                <a href="#" class="font-semibold text-xl">Pinterest</a>
+            </div>
+            <small class="block mt-12 text-sm font-semibold opacity-40">Radial &copy; 2023</small>
+        </div>
+    </div>
+</body>
+</html>
